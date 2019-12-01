@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(font-awesome.min.css);
+@import url(normalize.css);
+
+/*base*/
+body {
+ font: 20px/1 Amatic SC;
+ color: #222
+}
+
+/*bg*/
+body {
+ background: #111;
+ position: fixed
+}
+.bg {
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ z-index: -1
+}
+.bg video {
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto
+}
+
+/*logo*/
+#logo {
+ position: fixed;
+ left: 30px;
+ top: 30px;
+ cursor: pointer;
+ z-index: 5
+}
+#logo img {
+ width: 200px
+}
+
+/*header*/
+header {
+ position: fixed;
+ width: 230px;
+ height: 100%;
+}
+
+/*header nav*/
+#gnb {
+ position: absolute;
+ right: 0;
+ top: 320px;
+ width: 200px;
+}
+#gnb > li {
+ position: relative;
+ right: 20px;
+}
+#gnb > li > a {
+ display: block;
+ width: 100%;
+ color: #fff;    
+ line-height: 50px;
+ text-align: right;
+ padding-right: 40px;
+ padding-bottom: 15px;
+ font-size: 35px;
+}
+
+#gnb > li:hover > a,
+#gnb > li > a {
+ color: #fff;
+}
+
+/*2depth*/
+#gnb ul {
+ position: absolute;
+ left: 0;
+ top: 0;
+ opacity: 0;
+ transition: all 0.5s;
+}
+#gnb > li:hover ul {
+ opacity: 0.9;
+ left: 210px;
+}
+#gnb ul li {
+ margin-bottom: 10px;
+}
+#gnb ul a {
+ display: block;
+ color: #eee;
+ width: 150px;
+ line-height: 38px;
+ text-align: center;
+ font-size: 25px;
+}
+#gnb ul a:hover {
+ color: #2ba747;
+ transition: all 0.5s
+}
+
+/*sns*/
+.sns {
+ position: fixed;
+ top: 20px;
+ right: 50px;
+ z-index: 10
+}
+.sns a {
+ color: #eee;
+ display: block;
+ float: left;
+ padding: 8px;
+ opacity: 0.75;
+ font-size: 1.1em;
+ transition: all 0.3s
+}
+.sns a:hover {
+ opacity: 0.95;
+ color: #fff;
+ transform: scale(1.5)
+}
+
+/*aside*/
+aside {
+ position: fixed;
+ width: 400px;
+ height: 100%;
+ bottom: 0;
+ right: -350px;
+ transition: all 0.9s;
+ z-index: 1
+}
+aside:hover {
+ right: -100px
+}
+aside .inner {
+ position: absolute;
+ width: 300px;
+ height: 100%;
+ left: 150px;
+ bottom: 0;
+ background: rgba(0,0,0,0.4);
+ transition: all 1s;
+ opacity: 0
+}
+aside:hover .inner {
+ left: 0;
+ opacity: 1
+}
+
+/*btn*/
+@keyframes leaf {
+ 0% {
+  opacity: 1;
+  transform: rotate(10deg)
+ }
+ 100% {
+  opacity: 0;
+  color: #fff;
+  transform: rotate(210deg)
+ }
+}
+
+aside .btn {
+ position: absolute;
+ width: 200px;
+ height: 70px;
+ right: 380px;
+ top: 350px;
+ transition: all 1.2s
+}
+aside:hover .btn {
+ right: 0;
+ opacity: 0
+}
+
+.btn i {
+ position: absolute;
+ right: 0;
+ top: 0;
+ color: #fff;
+ font-size: 70px;
+ animation: leaf linear 1.5s 0s alternate infinite
+}
+
+/*.inner*/
+aside .inner {}
+aside .inner p {
+ position: absolute;
+ width: 300px;
+ height: 100px;
+ left: 70px;
+ bottom: 0
+}
+aside .inner p:nth-child(1) {
+ top: 70px;
+}
+aside .inner p:nth-child(2) {
+ top: 211px;
+}
+aside .inner p:nth-child(3) {
+ top: 347px;
+}
+aside .inner p:nth-child(4) {
+ top: 483px;
+}
+aside .inner p:nth-child(5) {
+ top: 618px;
+}
+aside:hover .inner p {
+ transform: translateX(0)
+}
+aside .inner p b {
+ color: #fff;
+ display: block;
+}
+aside .inner p img {
+ width: 190px;
+ opacity: 0.5;
+}
+aside .inner p img:hover {
+ opacity: 0.95
+}
+
+/*footer*/
+footer {
+ position: fixed;
+ bottom: 15px;
+ left: 45%;
+ z-index: -1
+}
+footer address {
+ font: 10.5px Nanum Gothic;
+ color: #eee;
+ font-style: normal;
+ text-shadow: 1px 1px 1px #000;
+ opacity: 0.8

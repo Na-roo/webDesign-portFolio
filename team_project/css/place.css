@@ -1,0 +1,325 @@
+@charset 'utf-8';
+@import url(https://fonts.googleapis.com/css?family=Cuprum);
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(font-awesome.min.css);
+@import url(normalize.css);
+
+/*font*/
+
+body {
+    font: 20px/1 Cuprum, Jeju Gothic;
+    color: #ecedf2;
+    background: #121826
+}
+
+
+/*배경*/
+
+.wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 1024px;
+    min-height: 768px
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    box-shadow: 1px 1px 1px rgba(238, 238, 238, 0.5)
+}
+
+
+/*logo*/
+
+#logo {
+    position: absolute;
+    width: 150px;
+    left: 70px
+}
+
+#logo img {
+    width: 150px;
+    height: 70px
+}
+
+
+/*gnb*/
+
+#gnb {
+    position: absolute;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+    line-height: 70px
+}
+
+#gnb li {
+    float: left;
+    width: 25%
+}
+
+#gnb li a {
+    display: block;
+    text-align: center
+}
+#gnb li:nth-of-type(3) a {
+	color: #0c92cf
+}
+
+#gnb li a:hover {
+    color: #0c92cf
+}
+
+
+/*sns*/
+
+.sns {
+    position: absolute;
+    top: 3px;
+    right: 30px
+}
+
+.sns a {
+    display: block;
+    font-size: 20px;
+    padding: 7px;
+    float: left;
+    opacity: 0.5;
+    transition: all 0.5s
+}
+
+.sns a:hover {
+    opacity: 1;
+    color: #0c92cf;
+    transform: translateY(-5px)
+}
+
+
+/*lnb*/
+
+#lnb {
+    position: absolute;
+    right: 30px;
+    top: 40px
+}
+
+#lnb li {
+    float: left
+}
+
+#lnb li a {
+    font-size: 16px;
+    padding: 0 7px;
+    border-right: solid 1px #888
+}
+
+#lnb a:hover {
+    color: #0c92cf
+}
+
+#lnb a:nth-child(3) {
+    border: none
+}
+
+/*.con3*/
+/*figure*/
+.con3 figure {
+ width: 100%;
+ height: 700px;
+ background: #162248
+}
+.con3 figure ul {
+    position: absolute;
+	left: 50%;
+	top: 110px;
+	width: 900px;
+	margin-left: -450px
+}
+.con3 figure ul li {
+ float: left;
+	width: 20%;
+    line-height: 60px;
+	text-align: center;
+    margin: 0 2.5%;
+    background: #010822
+}
+.con3 figure li a {
+ display: block;
+}
+.con3 figure li a:hover {
+ background: #ee5c69
+}
+.con3 figure .box {
+ position: relative;
+ top: 140px;
+ margin: auto;
+ width: 1130px;
+ height: 520px;
+ background: #010822
+}
+.con3 figure .box p {
+ position: relative;
+ margin: auto;
+ top: 30px;
+ width: 1070px;
+ height: 460px;
+ overflow: hidden;
+ background: url(../img/sub3.1.png)
+}
+.con3 figure .box div {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 350px;
+    height: 460px;
+    text-align: center;
+    color: #333;
+    background: rgba(236, 237, 242, 0.5);
+    opacity: 0;
+    transition: all 0.5s
+}
+.con3 figure .box:hover div {
+    opacity: 1
+}
+.con3 figure .box strong {
+    position: relative;
+    top: 80px;
+    font-size: 30px
+}
+.con3 figure .box desc {
+    display: block;
+    position: relative;
+    top: 100px;
+}
+.con3 figure .box a {
+    position: relative;
+    top: 190px;
+    display: block;
+    margin: auto;
+    width: 250px;
+    line-height: 60px;
+    color: #ecedf2;
+    background: #010822
+}
+.con3 figure .box a:hover {
+    background: #ee5c69
+}
+.con3 figure .box a:nth-of-type(1) {
+    margin-bottom: 20px
+}
+
+/*article*/
+.con3 article:nth-of-type(1) {
+    width: 1024px;
+	margin: auto;
+	margin-top: 50px;
+}
+.con3 article:nth-of-type(1) {
+    font-size: 25px
+}
+.con3 #city {
+   position: absolute;
+	left: 50%;
+	top: 890px;
+	width: 1024px;
+	margin-left: -512px 
+}
+.con3 #city > li {
+ float: left;
+	width: 12%;
+	text-align: center;
+    margin: 0 1.1428%
+}
+.con3 #city > li a {
+ display: block;
+ line-height: 50px;
+ font-size: 16px;
+ background: #162248
+}
+.con3 #city > li a:hover {
+ background: #ee5c69
+}
+.con3 #city > li ul {
+ position: absolute;
+ top: 70px;
+ left: 0;
+ width: 200px;
+ height: 400px
+}
+.con3 #city > li > ul li {
+ float: left;
+}
+.con3 #city > li > ul li a {
+ width: 98.5px;
+ line-height: 57.5px;
+}
+.con3 #city #map{
+ position: absolute;
+ top: 20px;
+ left: 215px;
+ width: 807px;
+ height: 400px;
+}
+
+.con3 article:nth-of-type(2) div {
+ width: 1024px;
+ height: 70px;
+margin: auto;
+margin-top: 565px;
+ background: url(../img/sub3.3.png) no-repeat center;
+    background-size: contain
+}
+
+.con3 article:nth-of-type(3) div {
+	margin: auto;
+	margin-top: 100px;
+	padding-left: 20px;
+ width: 1024px;
+	line-height: 40px;
+ background: #162248;
+}
+
+.con3 article:nth-of-type(3) div:nth-of-type(1) {
+	margin-top: 50px;
+}
+
+.con3 article:nth-of-type(3) .time {
+	position: absolute;
+	left: 50%;
+	margin-top: 10px;
+  width: 1000px;
+	margin-left: -500px;
+}
+
+.con3 article:nth-of-type(3) .time:nth-of-type(3) {
+	margin-bottom: 100px
+}
+.con3 article:nth-of-type(3) .time li {
+     float: left;
+    width: 10%;
+    line-height: 60px;
+	text-align: center;
+    margin: 0 1.25%
+}
+.con3 article:nth-of-type(3) .time li p {
+	margin-top: -60px;
+	opacity: 0
+}
+
+.con3 article:nth-of-type(3) .time li a {
+ display: block;
+ background: #ecedf2;
+ color: #333
+}
+.con3 article:nth-of-type(3) .time li a:hover {
+ color: #0c92cf;
+}
+.con3 article:nth-of-type(3) .time li a:hover desc {
+	opacity: 0
+}
+.con3 article:nth-of-type(3) .time li a:hover p {
+	opacity: 1;
+	font-size: 18px
+}
+

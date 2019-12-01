@@ -1,0 +1,211 @@
+@charset 'utf-8';
+@import url(https://fonts.googleapis.com/css?family=Cuprum);
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+@import url(font-awesome.min.css);
+@import url(normalize.css);
+
+/*font*/
+
+body {
+    font: 20px/1 Cuprum, Jeju Gothic;
+    color: #ecedf2;
+    background: #121826
+}
+
+
+.wrap {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 70px;
+    background: #121826;
+    box-shadow: 1px 1px 1px rgba(238, 238, 238, 0.5)
+}
+
+/*logo*/
+
+#logo {
+    position: absolute;
+    width: 150px;
+    left: 70px
+}
+
+#logo img {
+    width: 150px;
+    height: 70px
+}
+
+
+/*gnb*/
+
+#gnb {
+    position: absolute;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+    line-height: 70px
+}
+
+#gnb li {
+    float: left;
+    width: 25%
+}
+
+#gnb li a {
+    display: block;
+    text-align: center
+}
+#gnb li:last-child a {
+	 color: #0c92cf
+}
+
+#gnb li a:hover {
+    color: #0c92cf
+}
+
+
+/*sns*/
+
+.sns {
+    position: absolute;
+    top: 3px;
+    right: 30px
+}
+
+.sns a {
+    display: block;
+    font-size: 20px;
+    padding: 7px;
+    float: left;
+    opacity: 0.5;
+    transition: all 0.5s
+}
+
+.sns a:hover {
+    opacity: 1;
+    color: #0c92cf;
+    transform: translateY(-5px)
+}
+
+
+/*lnb*/
+
+#lnb {
+    position: absolute;
+    right: 30px;
+    top: 40px
+}
+
+#lnb li {
+    float: left
+}
+
+#lnb li a {
+    font-size: 16px;
+    padding: 0 7px;
+    border-right: solid 1px #888
+}
+
+#lnb a:hover {
+    color: #0c92cf
+}
+
+#lnb a:nth-child(3) {
+    border: none
+}
+
+
+
+
+
+/*section*/
+.con4 {
+ width: 1200px;
+ height: 100%;;
+ margin: auto;
+ margin-top: 100px;
+}
+.event {
+ height: 80px;
+ top:
+}
+.event ul {
+ float: left;
+}
+.event ul li {
+ float: left;
+ margin-right: 20px;
+}
+.event ul li a {
+ display: block;
+}
+.event ul li:hover {
+ color: #0c92cf
+}
+.event > a {}
+.event i {
+ float: right;
+}
+.event i strong {
+ margin-left: 20px;
+ border-bottom: 1px solid #0c92cf;
+ padding-bottom: 8px;
+ cursor: text;
+}
+.event i strong:hover {}
+.con4 .second {}
+.second article {
+ float: left;
+ width: 350px;
+ height: auto;
+ margin: 25px;
+}
+.second article img {
+ width: 100%;
+ height: auto;
+ background-size: cover;
+}
+.second article p {
+ font-size: 24px;
+ margin: 10px 0;
+}
+.second article desc {
+ font-size: 0.8em;
+ color: #999;
+margin-top: 5px
+}
+
+section .box {
+ position: absolute;
+ top: 1600px;
+ font-size: 25px;
+	width: 100px;
+	margin-left: -50px;
+ left: 50%;
+ margin-bottom: 100px
+ 
+}
+
+.box a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 30px;
+	padding: 10px 0;
+	background: #ee5c69;
+ color: #ecedf2;
+	transition: all 0.5s
+}
+.box a:hover {
+	border-radius: 50px;
+ background: #ffa38d
+}
+.box a p {}
+

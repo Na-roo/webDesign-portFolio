@@ -1,0 +1,596 @@
+@charset 'utf-8';
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(font-awesome.css);
+@import url(normalize.css);
+
+/*base*/
+body {
+ font: medium/1 'Josefin Slab', serif;
+ color: #555
+}
+
+.wrap {
+ position: relative;
+ width: 100%;
+ margin: 10px auto
+}
+
+/*layout*/
+header {
+ position: relative;
+ width: 100%;
+ height: 100px;
+}
+section {
+  width: 100%;
+  margin-left: 0
+ }
+section article {
+ float: left;
+ height: 400px;
+}
+section article:nth-child(1) {
+ width: 75%;
+ height: 500px;
+}
+section article:nth-child(2) {
+ background: #ddd;
+ width: 25%;
+ height: 500px;
+}
+section article:nth-child(3) {
+ background: #ddd;
+ width: 25%;
+}
+section article:nth-child(4) {
+ width: 25%;
+ cursor: pointer
+}
+section article:nth-child(5) {
+ background: #ddd;
+ width: 25%;
+ cursor: pointer
+}
+section article:nth-child(6) {
+ width: 25%;
+ cursor: pointer
+}
+section article:nth-child(7) {
+ background: rgba(178, 0, 0, 0.8);
+ width: 40%;
+ cursor: pointer
+}
+section article:nth-child(8) {
+ width: 60%;
+ cursor: pointer;
+ background: #000
+}
+
+/*effects*/
+header {
+ transition: all 0.5s
+}
+section {
+ transition: all 0.5s;
+}
+section article {
+ transition: all 0.5s;
+ animation: ani 1s 1
+}
+
+@keyframes ani {
+ 0% {
+  transform: scale(0)
+ }
+ 100% {
+  transform: scale(1)
+ }
+}
+
+/*logo*/
+#logo {
+ width: 300px;
+ height: 150px;
+ background: url(../img/logo_w.png) no-repeat 0 0;
+ background-size: contain;
+ position: absolute;
+ top: 10px;
+ left: 50%;
+ margin-left: -150px;
+}
+#logo a {
+ display: block;
+ width: 100%;
+ height: 100%
+}
+
+/*#gnb*/
+#gnb {
+ position: absolute;
+ top: 20px;
+ right: 2%;
+ width: 400px
+}
+#gnb li {
+ position: relative;
+ float: left;
+ width: 33.3333%;
+}
+#gnb li a {
+ display: block;
+ font-weight: bold;
+ line-height: 2.5em;
+ transition: all .2s;
+ text-align: center
+}
+#gnb li a:hover,
+#gnb li a:focus {
+ color: #ff0000
+}
+#gnb li a {
+ color: #222;
+}
+#gnb span {
+ position: absolute;
+ width: 0;
+ height: 2px;
+ top: 48%;
+ right: 20%;
+ text-align: center;
+ border-top: solid 2px #ad0000;
+ box-sizing: border-box;
+ transition: all 0.4s
+}
+#gnb li:hover span {
+ width: 80px
+}
+
+/*background img*/
+section article div {
+ overflow: hidden
+}
+section article .bg1 {
+ background: url(../img/ar_1_pic.png) no-repeat
+}
+section article .bg2 {
+ background: url(../img/ar_4_pic.png) no-repeat
+}
+section article .bg3 {
+ background: url(../img/ar_5_pic.png) no-repeat
+}
+section article .bg4 {
+ background: url(../img/ar_6_pic.png) no-repeat
+}
+section article .bg5 {
+ background: url(../img/ar_7_pic.png) no-repeat
+}
+
+section article .bg {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ background-size: cover;
+ background-position: center;
+ transition: all 0.4s
+}
+section article:nth-child(4) .bg {
+ background-size: 100%;
+ background-position: center;
+}
+section article:nth-child(5) .bg {
+ background-size: 100%;
+ background-position: center
+}
+section article:nth-child(6) .bg {
+ background-size: 100%;
+ background-position: center
+}
+section article:nth-child(4) .bg:hover {
+ background-size: 110%;
+ background-position: center;
+}
+section article:nth-child(5) .bg:hover {
+ background-size: 110%;
+ background-position: center
+}
+section article:nth-child(6) .bg:hover {
+ background-size: 110%;
+ background-position: center
+}
+
+/*background img text*/
+section article .bg span {
+ position: absolute;
+ right: 0;
+ top: 0;
+ color: #555;
+}
+section article .bg1 span:nth-of-type(1) {
+ right: 13%;
+ top: 38%;
+ font-size: 4.5em;
+ letter-spacing: 10px
+}
+section article .bg1 span:nth-of-type(2) {
+ right: 15%;
+ top: 55%;
+ color: #888;
+ font-size: 1em;
+}
+section article .bg1 span:nth-of-type(3) {
+ right: 15%;
+ top: 63%;
+ color: #888;
+ font-size: 1em;
+}
+
+section article .bg2 span:nth-of-type(1) {
+ top: 10%;
+ right: 23%;
+ width: 20%;
+ height: 2px;
+ background: #ad0000
+}
+section article .bg2 span:nth-of-type(2) {
+ top: 8.7%;
+ right: 13%;
+ font-weight: bold
+}
+
+section article .bg3 span:nth-of-type(1) {
+ top: 10%;
+ right: 18%;
+ width: 20%;
+ height: 2px;
+ background: #ad0000
+}
+section article .bg3 span:nth-of-type(2) {
+ top: 8.7%;
+ right: 13%;
+ font-weight: bold
+}
+
+section article .bg4 span:nth-of-type(1) {
+ top: 10%;
+ right: 17.7%;
+ width: 20%;
+ height: 2px;
+ background: #ad0000
+}
+section article .bg4 span:nth-of-type(2) {
+ top: 8.7%;
+ right: 13%;
+ font-weight: bold
+}
+
+section article .bg5 span {
+ width: 100%;
+ text-align: center;
+ top: 45%;
+ font-size: 3em;
+ color: #ddd;
+ letter-spacing: 5px;
+ text-shadow: 3px 3px 10px #ccc;
+ transition: all 0.2s
+ }
+section article:hover .bg5 span {
+ color: #ad0000
+}
+/*section article {cursor: crosshair}*/
+
+/*textbox*/
+section article .txt {
+ position: relative;
+ color: #555;
+ padding: 20px;
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+ box-sizing: border-box;
+}
+section article:hover .txt {}
+section article .txt i {
+ position: absolute;
+ top: 50%;
+ left: 0;
+ font-size: 1em;
+}
+section article .txt p {}
+section article .txt p strong {
+ display: block;
+ font-size: 1.5em;
+ margin-top: 20px 0 10px;
+ transition: all 0.5s
+}
+section article:hover .txt p strong {}
+section article .txt p b {}
+
+/*text box edit*/
+section article:nth-child(2) .txt {
+ top: 38%;
+ cursor: pointer
+}
+section article:nth-child(2) .txt p {
+ text-align: center;
+}
+section article:nth-child(2) .txt p strong {
+ height: 50px;
+}
+
+section article:nth-child(3) .txt {}
+@keyframes dia {
+ 0% {
+  opacity: 1
+ }
+ 100% {
+  opacity: 0
+ }
+}
+section article:nth-child(3) .txt i {
+ width: 100%;
+ color: #555;
+ opacity: 0.7;
+ font-size: 2em;
+ text-align: center;
+ animation: dia 1s alternate infinite
+}
+section article:nth-child(3) .txt p {
+ position: relative;
+ top: 38%;
+ text-align: center;
+}
+section article:nth-child(3) .txt p strong {
+ font-size: 2em;
+ letter-spacing: 3px
+}
+section article:nth-child(7) .txt p {
+ position: relative;
+ top: 50%;
+ color: #ddd;
+ text-align: center
+}
+section article:nth-child(7) .txt p strong {
+ font-size: 2em;
+ height: 50px;
+ letter-spacing: 3px
+}
+section article:nth-child(7) .txt p b {
+ font-size: 0.8em;
+ font-family: '굴림';
+ font-weight: 100
+}
+
+/*480~779px*/
+
+@media screen and (min-width:480px) and (max-width:779px) {
+ header {
+  position: relative;
+  width: 100%;
+  height: 130px;
+ }
+ section {
+  width: 100%;
+  margin-left: 0
+ }
+ section article {
+  height: 300px
+ }
+ section article:nth-child(1) {
+  width: 100%;
+  height: 300px
+ }
+ section article:nth-child(2) {
+  width: 100%;
+  height: 200px;
+  background: rgba(178, 0, 0, 0.8);
+ }
+ section article:nth-child(3) {
+  width: 50%
+ }
+ section article:nth-child(4) {
+  width: 50%
+ }
+ section article:nth-child(5) {
+  width: 50%;
+  background: #fff
+ }
+ section article:nth-child(6) {
+  width: 50%;
+  background: #ddd
+ }
+ section article:nth-child(7) {
+  width: 100%;
+  height: 200px;
+ }
+ section article:nth-child(8) {
+  width: 100%;
+  height: 200px;
+ }
+ 
+ /*480~779 logo*/
+ #logo {
+  background-image: url(../img/logo_w.png);
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  top: 10px;
+ }
+ #gnb {
+  width: 100%;
+  height: 50px;
+  top: 80px;
+  right: 0;
+  text-align: center
+ }
+ #gnb li {
+  float: left;
+  width: 33.3333%
+ }
+ #gnb li a {
+  padding: 5px
+  }
+ #gnb span {
+  width: 0;
+  height: 2px;
+  right: 31.5%;
+  transition: all 0.4s
+  }
+ #gnb li:hover span {
+  width: 80px;
+  }
+ 
+ /*480~779 background img*/
+ section article:nth-child(4) .bg {
+  background-size: 95%;
+  background-position: center;
+ }
+ section article:nth-child(5) .bg {
+  background-size: 95%;
+  background-position: center
+ }
+ section article:nth-child(6) .bg {
+  background-size: 95%;
+  background-position: center
+ }
+ section article:nth-child(4) .bg:hover {
+  background-size: 100%;
+  background-position: center;
+ }
+ section article:nth-child(5) .bg:hover {
+  background-size: 100%;
+  background-position: center
+ }
+ section article:nth-child(6) .bg:hover {
+  background-size: 100%;
+  background-position: center
+ }
+
+ /*480~779 background img text*/
+ section article .bg1 span:nth-of-type(1) {
+  right: 8%;
+  top: 38%;
+  font-size: 2.5em;
+  letter-spacing: 5px
+ }
+ section article .bg1 span:nth-of-type(2) {
+  right: 10%;
+  top: 55%;
+  color: #888;
+  font-size: 0.9em;
+}
+section article .bg1 span:nth-of-type(3) {
+  right: 10%;
+  top: 62%;
+  color: #888;
+  font-size: 0.9em;
+ }
+ section article .bg5 span {
+  width: 100%;
+  text-align: center;
+  top: 43%;
+  font-size: 2em;
+  color: #ddd;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 10px #ccc;
+  transition: all 0.2s
+ }
+ section article:hover .bg5 span {
+  color: #ad0000
+ }
+ 
+ /*480~779 textbox edit*/
+ section article:nth-child(2) .txt {
+  top: 28%;
+  color: #eee;
+  cursor: pointer
+ }
+ section article:nth-child(2) .txt p {
+  text-align: center;
+ }
+ section article:nth-child(2) .txt p strong {
+  height: 35px;
+ }
+ section article:nth-child(3) .txt p strong {
+  font-size: 1.5em;
+  letter-spacing: 3px
+ }
+ section article:nth-child(7) .txt p {
+  position: relative;
+  top: 35%;
+  color: #ddd;
+  text-align: center
+ }
+ section article:nth-child(7) .txt p strong {
+  font-size: 1.5em;
+  height: 30px;
+  letter-spacing: 3px
+ }
+ section article:nth-child(7) .txt p b {
+  font-size: 0.7em;
+  font-family: '굴림';
+  font-weight: 100
+ }
+}
+
+/* ~479px */
+
+@media screen and (max-width:479px) {
+ body {
+  background-image: url(../img/mobile/m_pic.png);
+ }
+ header {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  z-index: 5
+ }
+ section {
+  width: 100%;
+  margin-left: 0;
+  z-index: 3
+ }
+ section article {
+  display: none
+ }
+ 
+ /*479 logo*/
+ #logo {
+  background-image: url(../img/logo_w.png);
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  top: 20px;
+ }
+ /*479 gnb*/
+ #gnb {
+  width: 250px;
+  top: 280px;
+  right: 50%;
+  margin-right: -125px
+ }
+ #gnb li {
+  width: 100%;
+  margin-bottom: 50px
+ }
+ #gnb li a {
+  width: 100%;
+  border-radius: 10px 30px;
+  color: #fff;
+  box-sizing: border-box
+ }
+  #gnb span {
+  width: 0;
+  height: 2px;
+  right: 33.5%;
+  transition: all 0.4s
+  }
+ #gnb li:hover span {
+  width: 80px;
+  }
+
+ /*479 text*/
+ section article:nth-child(1) span {
+  display: none
+ }
+}

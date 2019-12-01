@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>TEAM_PROJECT</title>
+ <link rel="stylesheet" href="css/place.css">
+ <script src="js/modernizr-custom.js"></script>
+ <script src="js/jquery-1.12.4.min.js"></script>
+ <script src="js/jquery-ui.min.js"></script>
+ <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=YOUR_CLIENT_ID"></script>
+ <script src="js/script2.js"></script>
+</head>
+
+<body>
+ 
+ <div class="wrap">
+  <header>
+   <h1 id="logo">
+    <a href="index.html"><img src="img/logo.png" alt="밍꾸박스로고"></a>
+   </h1>
+   <ul id="gnb">
+    <li><a href="movie.html">영화</a></li>
+    <li><a href="ticket.html">예매</a></li>
+    <li><a href="place.html">상영관</a></li>
+    <li><a href="event.html">이벤트</a></li>
+   </ul>
+  </header>
+
+  <div class="sns">
+   <a href="#"><i class="fa fa-facebook-square"></i></a>
+   <a href="#"><i class="fa fa-twitter-square"></i></a>
+   <a href="#"><i class="fa fa-instagram"></i></a>
+   <a href="#"><i class="fa fa-envelope"></i></a>
+  </div>
+  <ul id="lnb">
+   <li><a href="#">로그인</a></li>
+   <li><a href="#">회원가입</a></li>
+   <li><a href="#">고객센터</a></li>
+  </ul>
+
+  <section class="con3">
+   <figure>
+    <ul>
+     <li><a href="#">IMAX/4D</a></li>
+     <li><a href="#">Premium</a></li>
+     <li><a href="#">Barrier Free</a></li>
+     <li><a href="#">Silver</a></li>
+    </ul>
+    <div class="box">
+     <p></p>
+     <div>
+      <strong>IMAX/4D</strong><br>
+      <desc>다이나믹한 오감만족 영화 체험</desc>
+      <a href="#">자세히보기</a>
+      <a href="#">영화관찾기</a>
+     </div>
+    </div>
+   </figure>
+
+   <article>
+    <desc>영화관 찾기</desc>
+    <ul id="city">
+     <li>
+      <a href="#">서울</a>
+      <ul>
+       <li><a href="#">강남</a></li>
+       <li><a href="#">강남대로</a></li>
+       <li><a href="#">동대문</a></li>
+       <li><a href="#">목동</a></li>
+       <li><a href="#">상봉</a></li>
+       <li><a href="#">센트럴</a></li>
+       <li><a href="#">수유</a></li>
+       <li><a href="#">신촌</a></li>
+       <li><a href="#">은평</a></li>
+       <li><a href="#">이수</a></li>
+       <li><a href="#">창동</a></li>
+       <li><a href="#">코엑스</a></li>
+       <li><a href="#">화곡</a></li>
+       <li><a href="#">.</a></li>
+      </ul>
+     </li>
+     <li><a href="#">경기/인천</a></li>
+     <li><a href="#">충청/대전</a></li>
+     <li><a href="#">전라/광주</a></li>
+     <li><a href="#">경북/대구</a></li>
+     <li><a href="#">경남/부산</a></li>
+     <li><a href="#">강원/제주</a></li>
+     <div id="map"></div>
+    </ul>
+   </article>
+
+   <article>
+    <div></div>
+   </article>
+
+   <article>
+    <div>리얼</div>
+    <ul class="time">
+     <li>
+      <a href="#">
+       <desc>09:00</desc>
+       <p>(잔여석: 90)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>10:30</desc>
+       <p>(잔여석: 30)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>12:00</desc>
+       <p>(잔여석: 42)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>13:30</desc>
+       <p>(잔여석: 123)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>15:00</desc>
+       <p>(잔여석: 154)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>16:30</desc>
+       <p>(잔여석: 120)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>18:00</desc>
+       <p>(잔여석: 18)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>19:30</desc>
+       <p>(잔여석: 28)</p>
+      </a>
+     </li>
+    </ul>
+    <div>박열</div>
+    <ul class="time">
+     <li>
+      <a href="#">
+       <desc>09:00</desc>
+       <p>(잔여석: 90)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>10:30</desc>
+       <p>(잔여석: 30)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>12:00</desc>
+       <p>(잔여석: 42)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>13:30</desc>
+       <p>(잔여석: 123)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>15:00</desc>
+       <p>(잔여석: 154)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>16:30</desc>
+       <p>(잔여석: 120)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>18:00</desc>
+       <p>(잔여석: 18)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>19:30</desc>
+       <p>(잔여석: 28)</p>
+      </a>
+     </li>
+    </ul>
+    <div>스파이더맨:홈커밍</div>
+    <ul class="time">
+     <li>
+      <a href="#">
+       <desc>09:00</desc>
+       <p>(잔여석: 90)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>10:30</desc>
+       <p>(잔여석: 30)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>12:00</desc>
+       <p>(잔여석: 42)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>13:30</desc>
+       <p>(잔여석: 123)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>15:00</desc>
+       <p>(잔여석: 154)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>16:30</desc>
+       <p>(잔여석: 120)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>18:00</desc>
+       <p>(잔여석: 18)</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <desc>19:30</desc>
+       <p>(잔여석: 28)</p>
+      </a>
+     </li>
+    </ul>
+   </article>
+  </section>
+
+ </div>
+ 
+ <script>
+var mapOptions = {
+    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    zoom: 10
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+</script>
+ 
+</body>
+
+</html>
